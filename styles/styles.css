@@ -1,0 +1,524 @@
+:root {
+	--background-color: #f5f7fa;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--background-color);
+	margin: 0;
+}
+
+/* main style */
+.main {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* main content style */
+.main__container {
+	background-color: #ffffff;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+	padding: 105px 90px;
+	box-sizing: border-box;
+	max-width: 100%; /* Исправлено */
+}
+
+/* Респонсив для мобильных устройств и планшетов */
+@media only screen and (max-width: 767px) {
+	.main {
+		flex-direction: column;
+	}
+
+	.main__container {
+		width: 100%;
+		padding: 20px;
+	}
+
+	.about__description {
+		width: 100%; /* Равная ширина на мобильных устройствах */
+		box-sizing: border-box;
+		margin-right: 0; /* Исправлено */
+	}
+
+	.sidebar {
+		width: 100%;
+	}
+}
+
+/* about styles */
+.about {
+	margin-bottom: 40px;
+}
+
+.about__title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	margin-bottom: 20px;
+}
+
+.about__name {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 55px;
+	color: #000000;
+	margin-bottom: 25px;
+}
+
+.about__description {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #595959;
+	width: 100%; /* Исправлено */
+}
+
+.projects {
+	margin-bottom: 50px;
+}
+
+.title {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 27px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.project-list {
+	padding: 0;
+	margin-left: 15px;
+}
+
+.project-item {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+}
+
+.project,
+.project-link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #595959;
+}
+
+.project-link {
+	margin-left: 10px;
+}
+
+.project-bracket {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: #000000;
+}
+
+/* work styles */
+
+
+.work-position {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+.organization {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fb6d3a;
+}
+
+.period {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 12px;
+	line-height: 15px;
+	color: #a8a8a8;
+	margin-bottom: 10px;
+}
+
+.line {
+	font-style: normal;
+	font-weight: normal;
+	font-size: 12px;
+	line-height: 15px;
+	color: #000000;
+}
+
+.work-list {
+	padding: 0;
+	margin-left: 15px;
+}
+
+.work-list-item {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #595959;
+}
+
+.education-position {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 20px;
+	color: #fb6d3a;
+	margin-bottom: 10px;
+}
+
+.education-skill {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	color: #000000;
+	margin-bottom: 10px;
+}
+
+/* sidebar style */
+.sidebar {
+	background-color: #1e2939;
+	padding-top: 40px;
+	width: 370px;
+}
+
+.photo {
+	width: 370px;
+	margin-bottom: 50px;
+}
+
+.sidebar-title {
+	color: #ffffff;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 27px;
+	margin-bottom: 10px;
+}
+
+.contacts,
+.tech-skills,
+.soft-skills {
+	margin-left: 40px;
+}
+
+.contacts {
+	margin-bottom: 50px;
+}
+
+.tech-skills {
+	margin-bottom: 45px;
+}
+
+.contact-type {
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 24px;
+	color: #ffffff;
+	margin-right: 10px;
+}
+
+.contact-link {
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+	color: #ffffff;
+	text-decoration: none;
+	/* opacity: 0.5; */
+}
+
+.tech-skills-list {
+	color: #ffffff;
+	padding: 0;
+	margin: 17px;
+}
+
+.tech-skills-item {
+	color: #fb6d3a;
+}
+
+.tech-skills-text {
+	color: #ffffff;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 24px;
+}
+
+:root {
+	--background-color: #f5f7fa;
+}
+
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: var(--background-color);
+	margin: 0;
+}
+
+/* main style */
+.main {
+	display: flex;
+	flex-direction: row-reverse;
+	width: 1200px;
+	margin: 0 auto;
+}
+
+/* main content style */
+.main__container {
+	background-color: #ffffff;
+	box-shadow: 6px 6px 20px rgba(0, 0, 0, 0.1);
+	padding: 105px 90px;
+	box-sizing: border-box;
+	width: 100%; /* Чтобы контейнер занимал 100% ширины */
+	max-width: 1200px; /* Ограничение максимальной ширины */
+	margin: 0 auto; /* Выравнивание по центру */
+}
+
+/* Респонсив для мобильных устройств и планшетов */
+@media only screen and (max-width: 390px) {
+	.main {
+		max-width: 390px;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.main__container {
+		max-width: 380px;
+		padding: 10px;
+	}
+
+	.about__description {
+		width: 100%;
+		max-width: 380px;
+	}
+
+	.sidebar {
+		width: 100%;
+		max-width: 380px;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.sidebar-title {
+		color: #ffffff;
+		font-style: normal;
+		font-weight: 700;
+		font-size: 14px;
+		line-height: 18px;
+		margin-bottom: 10px;
+	}
+
+	.contact-type {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.contact-link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+
+		/* opacity: 0.5; */
+	}
+
+	.tech-skills-list {
+		margin: 14px;
+	}
+
+	.tech-skills-text {
+		color: #ffffff;
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+	}
+
+	.photo {
+		width: 100%;
+		margin-bottom: 10px;
+	}
+
+	.about__title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 15px;
+		color: #000000;
+		margin-bottom: 5px;
+	}
+
+	.about__name {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 27px;
+		line-height: 30px;
+		color: #000000;
+		margin-bottom: 15px;
+	}
+
+	.about__description {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #595959;
+		width: 100%; /* Исправлено */
+	}
+
+	.projects {
+		margin-bottom: 20px;
+	}
+
+	.title {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 16px;
+		line-height: 21px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+
+	.project-list {
+		padding: 0;
+		margin-left: 15px;
+	}
+
+	.project-item {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 18px;
+		color: #000000;
+	}
+
+	.project,
+	.project-link {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 16px;
+		color: #595959;
+	}
+
+	.project-link {
+		margin-left: 10px;
+	}
+
+	.project-bracket {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+	}
+
+	/* work styles */
+	.work {
+
+
+	.work-position {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+
+	.organization {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #fb6d3a;
+	}
+
+	.period {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 12px;
+		line-height: 15px;
+		color: #a8a8a8;
+		margin-bottom: 10px;
+	}
+
+	.line {
+		font-style: normal;
+		font-weight: normal;
+		font-size: 12px;
+		line-height: 15px;
+		color: #000000;
+	}
+
+	.work-list {
+		padding: 0;
+		margin-left: 15px;
+	}
+
+	.work-list-item {
+		font-style: normal;
+		font-weight: 400;
+		font-size: 14px;
+		line-height: 24px;
+		color: #595959;
+	}
+
+
+
+	.education-position {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #fb6d3a;
+		margin-bottom: 10px;
+	}
+
+	.education-skill {
+		font-style: normal;
+		font-weight: 700;
+		font-size: 12px;
+		line-height: 16px;
+		color: #000000;
+		margin-bottom: 10px;
+	}
+}
+
+/* Дополнительные стили для планшетов (768px - 1023px) */
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+	.main__container {
+		padding: 60px 40px;
+	}
+}
+
+/* Дополнительные стили для устройств с шириной больше 1024px */
+@media only screen and (min-width: 1024px) {
+	.main__container {
+		padding: 105px 90px;
+	}
+}
